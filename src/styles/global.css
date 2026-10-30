@@ -1,0 +1,77 @@
+:root {
+  --bg-app: #0e0f12;
+  --bg-dock: #090a0d;
+  --bg-sidebar: #131418;
+  --bg-surface: #191a1f;
+  --bg-surface-hover: #22232a;
+  --bg-card: #1f2026;
+  
+  --border-subtle: #272832;
+  --border-medium: #363744;
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  
+  --accent-gold: #e5a83b;
+  --accent-gold-dark: #b88225;
+  --accent-gold-text: #111215;
+  --accent-cyan: #00a3c4;
+  --accent-cyan-hover: #008ba3;
+  --accent-red: #e53935;
+  --accent-red-hover: #c62828;
+  --accent-green: #10b981;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
